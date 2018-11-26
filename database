@@ -1,0 +1,15 @@
+books
+book_id, title, author_id, catagory1, catagory2, catagory3, catagory4, tags, published_year, cover, file_epub, file_mob, file_pdf, file_other
+
+authors
+author_id, name, aka, dob, picture, info
+
+users
+user_id, name, email, passw, facebook_id, google_id, oauth
+
+user_profile
+profile_id, currently_reading, user_device, profile_picture,
+
+devices
+device_id
+files
