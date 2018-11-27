@@ -27,7 +27,7 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 250px) {
 
   .gallery-block.grid-gallery .scale-on-hover:hover{
     transform: scale(1.05);
