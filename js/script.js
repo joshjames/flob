@@ -30,11 +30,11 @@ $(document).ready(function () {
 });
 
 
-function DeleteUser(id) {
+function DeleteUser(user_id) {
     var conf = confirm("Are you sure, do you really want to delete User?");
     if (conf == true) {
         $.post("ajax/deleteUser.php", {
-                id: id
+                user_id: user_id
             },
             function (data, status) {
                 // reload Users by using readRecords();
@@ -44,11 +44,11 @@ function DeleteUser(id) {
     }
 }
 
-function GetUserDetails(id) {
+function GetUserDetails(user_id) {
     // Add User ID to the hidden field for furture usage
-    $("#hidden_user_id").val(id);
+    $("#hidden_user_id").val(user_id);
     $.post("ajax/readUserDetails.php", {
-            id: id
+            user_id: user_id
         },
         function (data, status) {
             // PARSE json data
@@ -70,11 +70,11 @@ function UpdateUserDetails() {
     var email = $("#update_email").val();
 
     // get hidden field value
-    var id = $("#hidden_user_id").val();
+    var user_id = $("#hidden_user_id").val();
 
     // Update the details by requesting to the server using ajax
     $.post("ajax/updateUserDetails.php", {
-            id: id,
+            user_id: user_id,
             first_name: first_name,
             last_name: last_name,
             email: email

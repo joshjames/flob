@@ -6,13 +6,13 @@ include("db_connection.php");
 if(isset($_POST))
 {
     // get values
-    $id = $_POST['id'];
+    $user_id = $_POST['user_id'];
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
     $email = $_POST['email'];
 
     // Updaste User details
-    $query = "UPDATE users SET first_name = '$first_name', last_name = '$last_name', email = '$email' WHERE id = '$id'";
+    $query = "UPDATE users SET first_name = '$first_name', last_name = '$last_name', email = '$email' WHERE user_id = '$user_id'";
     if (!$result = mysqli_query($con, $query)) {
         exit(mysqli_error($con));
     }
