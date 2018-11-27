@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Grid Gallery</title>
+        <title>Book Gallery</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
         <link rel="stylesheet" href="grid-gallery.css">
@@ -13,7 +13,7 @@
         <section class="gallery-block grid-gallery">
             <div class="container">
                 <div class="heading">
-                    <h2>Grid Gallery</h2>
+                    <h2>Book Gallery</h2>
                 </div>
                 <div class="row">
 
@@ -24,8 +24,8 @@
                     ?>    
 
                     <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="/covers/image<?php echo $x; ?>.jpg">
-                        <img class="img-fluid image scale-on-hover" src="/covers/image<?php echo $x; ?>.jpg">
+                    <a class="lightbox" href="/covers/cover<?php echo $x; ?>.jpg">
+                        <img class="img-fluid image scale-on-hover" src="/covers/cover<?php echo $x; ?>.jpg">
                     </a>
                     </div>
 
