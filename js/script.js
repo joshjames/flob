@@ -23,7 +23,13 @@ function addRecord() {
         $("#email").val("");
     });
 }
- 
+
+$(document).ready(function () {
+    // READ recods on page load
+    readRecords(); // calling function
+});
+
+
 // READ records
 function readRecords() {
     $.get("ajax/readRecords.php", {}, function (data, status) {
