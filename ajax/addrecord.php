@@ -9,7 +9,7 @@
         $last_name = $_POST['last_name'];
         $email = $_POST['email'];
  
-        $query = "INSERT INTO users(first_name, last_name, email) VALUES('$first_name', '$last_name', '$email')";
+        $query = "INSERT INTO users(name, first_name, last_name, email) VALUES('$first_name', '$first_name', '$last_name', '$email')";
         if (!$result = mysqli_query($con, $query)) {
             exit(mysqli_error($con));
         }
