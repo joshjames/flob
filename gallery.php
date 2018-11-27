@@ -24,8 +24,8 @@
                     ?>    
 
                     <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="/covers/image<? echo $x ?>.jpg">
-                        <img class="img-fluid image scale-on-hover" src="../img/image1.jpg">
+                    <a class="lightbox" href="/covers/image<?php echo $x; ?>.jpg">
+                        <img class="img-fluid image scale-on-hover" src="/covers/image<?php echo $x; ?>.jpg">
                     </a>
                     </div>
 
